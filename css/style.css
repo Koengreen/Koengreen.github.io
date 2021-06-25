@@ -39,8 +39,8 @@ body {
       color: #1F1F1F;
       border-radius: 10px;
       cursor: pointer;
-      width: 31%;
-      height: 31%;
+      width: 100%;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;

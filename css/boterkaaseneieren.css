@@ -24,19 +24,19 @@ td:hover{
 
 h1{
     text-align: center;
-    text-shadow: -1px 0 white, 0 5px whitesmoke, 5px 0 white, 0 -5px whitesmoke;
+    text-shadow: -1px 0 white, 0 5px whitesmoke;
     font-family: "Tahoma", serif;
 }
 
 .points{
-    text-shadow: -5px 0 white, 0 5px whitesmoke, 5px 0 white, 0 -5px whitesmoke;
+    text-shadow: -5px 0 white, 0 5px whitesmoke;
     font-family: "Tahoma", verdana;
 }
 
 button{
     width: 80px;
     height: 35px;
-    color: plum;
+    color: #32064a;
     border: solid 1px grey;
     background-color: black;
 }
@@ -65,6 +65,11 @@ button{
 body{
     animation: normalChange 30s infinite;
     -webkit-animation: normalChange 30s infinite; 
-    background: green;
+    background-image:url('../img/bg.jpg');
+    background-attachment:fixed;        
+    background-repeat: no-repeat;
+    background-size: cover;
+        color:white;
+    
 }
 

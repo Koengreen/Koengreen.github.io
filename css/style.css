@@ -2,17 +2,35 @@ body{
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: black;
+    background-color: #000000;
+    background-image: linear-gradient(to bottom, #000000, #333333);
 }
 .line{
+
     position: relative;
     top:50%;
-    width: 15.6em;
+    width: 9.1em;
     margin: 0 auto;
     border-right: 2px solid #ff6f61;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
+}
+.HomeButton{
+    background-color: #000000;
+    background-image: linear-gradient(to bottom, #000000, #333333);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #FFFFFF;
+  font-size: larger;
+}
+.HomeButton:hover{
+    background-color: #000000;
+    background-image: linear-gradient(to bottom, #000000, #4b4848);
+    
 }
 /* animattion */
 .typewriter{
@@ -36,7 +54,8 @@ body{
     }
 }
 .overlay{
-    background-color: red;
+    background-color: #FF4136;
+    box-shadow: 0px 0px 10px #FF4136;
     text-align: center;
     height: 80vh;
     width: 100vw;

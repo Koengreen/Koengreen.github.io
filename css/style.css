@@ -1,105 +1,29 @@
-body{
-    display: flex;
-    background-color: #000000;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: Arial, sans-serif;
-    font-weight: 900;
-    opacity: 0.8;
-  
-}
-
-.loading-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+body {
+    background-color: black;
   }
   
-.line{
-
-    position: relative;
-    top:50%;
-    width: 9.1em;
-    margin: 0 auto;
-    border-right: 2px solid #ff6f61;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
-}
-.HomeButton{
-    background-color: #000000;
-    background-image: linear-gradient(to bottom, #000000, #333333);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px #FFFFFF;
-  font-size: larger;
-}
-.HomeButton:hover{
-    background-color: #000000;
-    background-image: linear-gradient(to bottom, #000000, #4b4848);
-    
-}
-/* animattion */
-.typewriter{
-    animation: typeMsg 4s steps(40) 1s 1 normal both,
-    cursorAnim 500ms steps(40) infinite normal;
-}
-@keyframes typeMsg{
-    from{
-        width: 0em;
-    }
-    to{
-        width: 9.1em;
-    }
-}
-@keyframes cursorAnim{
-    from{
-        border-right-color: #ff6f61;
-    }
-    to{
-        border-right-color: transparent;
-    }
-}
-.overlay{
-    background-color: #FF4136;
-    box-shadow: 0px 0px 10px #FF4136;
-    text-align: center;
-    height: 80vh;
-    width: 100vw;
-}
-
-.loading-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+  .navbar {
+    padding: 20px;
   }
   
-  .loading-circle {
-    width: 50px;
-    height: 50px;
-    border: 5px solid #333333;
-    border-top-color: transparent;
-    border-radius: 50%;
-    animation: loading-spin 1s linear infinite;
-  }
-  
-  .loading-text {
-    font-size: 20px;
-    color: #333333;
-    margin-top: 20px;
-    text-align: center;
+  .navbar-brand {
+    font-size: 24px;
     font-weight: bold;
   }
   
-  @keyframes loading-spin {
-    to {
-      transform: rotate(360deg);
-    }
+  .nav-link {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+  
+  .navbar-nav {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .underline {
+    border-bottom: 1px solid white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
   }
   

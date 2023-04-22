@@ -1,9 +1,12 @@
 body {
     background-color: black;
+    display: grid;
+    justify-content: center;
+    text-align: center;
   }
   
   .navbar {
-    padding: 20px;
+    padding: 30px;
   }
   
   .navbar-brand {
@@ -26,10 +29,133 @@ body {
     width: 100%;
     justify-content: space-evenly;
   }
-  .underline {
+  .navunderline {
     border-bottom: 1px solid white;
     width: 100%;
     position: absolute;
     bottom: 0;
   }
+  .underline{
+    position: relative;
+    border-bottom: 1px solid white;
+    width: 100%;
+  }
+
+  .HomeText {
+    margin-top: 100px; /* adjust this value as per your requirement */
+    position: relative;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+  }
   
+  .HomeTextImg{
+    width: 80vw;
+    height: auto;
+    object-fit: scale-down;
+  }
+
+  .line{
+
+    position: relative;
+    width: 38vw;
+    margin: 0 auto;
+    border-right: 2px solid #ff6f61;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    object-fit: scale-down;
+}
+
+h1{
+  color: white;
+}
+
+.typewriter{
+  animation: typeMsg 4s steps(40) 1s 1 normal both,
+  cursorAnim 500ms steps(40) infinite normal;
+}
+@media only screen and (max-width: 768px) { /* Adjust font size for screens smaller than 768px */
+  .typewriter {
+      font-size: 20px;
+  }
+  h1{
+    font-size: 20px;
+  }
+}
+
+@keyframes typeMsg{
+  from{
+      width: 0em;
+  }
+  to{
+      width: 12em;
+  }
+}
+@keyframes cursorAnim{
+  from{
+      border-right-color: #ff6f61;
+  }
+  to{
+      border-right-color: transparent;
+  }
+}
+table {
+  border-collapse: collapse;
+  color: white;
+  width: 100%;
+  height: 400px;
+  margin: auto;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+.progress-bar {
+  background-color: #f2f2f2;
+  color: white;
+  text-align: right;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  height: 30px;
+  padding-left: 5px;
+}
+
+.progress-bar-Symfony {
+  background-color: #ff2d20;
+  box-shadow: 0 0 15px #ff2d20;
+}
+
+.progress-bar-htmlcss {
+  background-color: #f5a623;
+  box-shadow: 0 0 15px #f5a623;
+}
+
+.progress-bar-js {
+  background-color: #ff6a00;
+  box-shadow: 0 0 15px #ff6a00;
+}
+
+.progress-bar-Csharp {
+  background-color: #16a085;
+  box-shadow: 0 0 15px #16a085;
+}
+
+.progress-bar-python {
+  background-color: #8e44ad;
+  box-shadow: 0 0 15px #8e44ad;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+

@@ -2,9 +2,13 @@ body {
     background-color: black;
     display: grid;
     justify-content: center;
+    color: white;
     text-align: center;
   }
   
+  p{
+    font-size: larger;
+  }
   .navbar {
     padding: 3  0px;
   }

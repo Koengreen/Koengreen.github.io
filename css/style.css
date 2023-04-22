@@ -68,6 +68,7 @@ body {
     width: 80vw;
     height: auto;
     object-fit: scale-down;
+
   }
 
   .line{
@@ -104,6 +105,14 @@ h1{
   .HomeText{
     margin-top: 0px;
   }
+  .HomeTextImg{
+    width: 100vw;
+
+  }
+  #photos .col-sm-4 {
+    width: 50%;
+  }
+  
 }
 
 
@@ -180,8 +189,34 @@ td {
   box-shadow: 0 0 15px #8e44ad;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  height: 100vh;
+#photos .col-sm-4 {
+  width: calc(100% / 3);
+  padding: 30px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
 }
+
+#photos img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#photos img:hover {
+  transform: scale(1.1);
+  transition: 2s;
+}
+
+@media only screen and (max-width: 768px) {
+  #photos .col-sm-4 {
+    width: 50%;
+    object-fit: scale-down;
+  }
+  #photos .col-sm-4 {
+    padding: 4px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+  }
+}
+

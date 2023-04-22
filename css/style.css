@@ -93,7 +93,15 @@ h1{
   h1{
     font-size: 20px;
   }
+
+  .navbar {
+    position: relative;
+  }
+  .HomeText{
+    margin-top: 0px;
+  }
 }
+
 
 @keyframes typeMsg{
   from{
@@ -138,7 +146,8 @@ td {
 }
 
 .progress-bar-fill {
-  transition: width 5s;
+  transition: width 6s;
+  
 }
 
 .progress-bar-Symfony {
@@ -162,6 +171,7 @@ td {
 }
 
 .progress-bar-python {
+  color: white;
   background-color: #8e44ad;
   box-shadow: 0 0 15px #8e44ad;
 }

@@ -32,4 +32,30 @@ smoothScrollLinks.forEach(link => {
   });
 });
 
+// get the photos section element
+const photosSection = document.getElementById('photos');
+
+// listen for scroll events
+window.addEventListener('scroll', () => {
+  // check if the photos section is in the viewport
+  if (isElementInViewport(photosSection)) {
+    // add a class to the images to trigger the animation
+    const images = photosSection.querySelectorAll('img');
+    images.forEach((img, index) => {
+      img.classList.add(`animate-delay-${index+1}`);
+    });
+  }
+});
+
+// function to check if an element is in the viewport
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
   

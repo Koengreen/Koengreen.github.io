@@ -11,6 +11,7 @@ body {
   }
   .navbar {
     padding: 3  0px;
+    background-color: black;
   }
   
   .navbar-brand {
@@ -98,9 +99,8 @@ h1{
   h1{
     font-size: 20px;
   }
-
-  .navbar {
-    position: relative;
+  body{
+    margin-top: 50px;
   }
   .HomeText{
     margin-top: 0px;
@@ -189,34 +189,33 @@ td {
   box-shadow: 0 0 15px #8e44ad;
 }
 
-#photos .col-sm-4 {
+.container .col-sm-4 {
   width: calc(100% / 3);
   padding: 30px;
   padding-bottom: 20px;
   box-sizing: border-box;
 }
 
-#photos img {
+.container img {
   width: 100%;
   height: 380px;
   object-fit: cover;
   object-position: center;
 }
 
-#photos img:hover {
+.container img:hover {
   transform: scale(1.1);
   transition: 2s;
 }
 
 @media only screen and (max-width: 768px) {
-  #photos .col-sm-4 {
+  .container .col-sm-4 {
     width: 50%;
     object-fit: scale-down;
   }
-  #photos .col-sm-4 {
+  .container .col-sm-4 {
     padding: 4px;
     padding-bottom: 20px;
     box-sizing: border-box;
   }
 }
-

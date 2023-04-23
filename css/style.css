@@ -219,3 +219,27 @@ td {
     box-sizing: border-box;
   }
 }
+.container img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container img:hover {
+  transform: scale(1.1);
+  transition: 2s;
+}
+
+@media only screen and (max-width: 768px) {
+  .container .col-sm-4 {
+    width: 50%;
+    object-fit: scale-down;
+  }
+  .container .col-sm-4 {
+    padding: 4px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+  }
+}
+
